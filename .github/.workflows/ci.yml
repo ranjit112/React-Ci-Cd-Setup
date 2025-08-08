@@ -7,11 +7,10 @@ on:
       - master
 
 jobs:
-    build-and-test:
-        runs on: ubuntu-latest
-
-        Steps:
-            -name: "Setup Node JS"
-            uses: actions/setup-node@v4
-            with:
-                node-version: '21'        
+  build-and-test:
+    runs on: ubuntu-latest
+    Steps:
+      - name: "Setup Node JS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21'        
